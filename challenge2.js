@@ -22,16 +22,12 @@ greet(`abdulaziz`);
  * isOdd(10) -> false
  */
 function isOdd(n) {
-  let message;
-
-  if ( n % 2 === 0 ) {
-    message = ` The Number ${n} is even`;
-  } else {
-       message = ` The Number ${n} is odd`;
-    }
-    console.log (message);
+  if ( n % 2 !== 0 ) {
+    return false;
   }
-isOdd(11);
+  return true;
+}
+console.log(isOdd(10));
 
 /**
  * oddsSmallerThan(n):
@@ -43,8 +39,11 @@ isOdd(11);
  * oddsSmallerThan(15) -> 7
  */
 function oddsSmallerThan(n) {
-  // Your code here
+  return Math.floor (n /2);
 }
+console.log(oddsSmallerThan(15));
+
+
 
 /**
  * squareOrDouble(n):
@@ -57,13 +56,13 @@ function oddsSmallerThan(n) {
  * squareOrDouble(9) -> 81
  */
 function squareOrDouble(n) {
-  let message;
+  
 
   if ( n % 2 === 0 ) {
-    message = `${n+n}`;
-  } else {
-       message = `${n*n}`;
+    return (n+n);
+  }
+  return (n*n);
+       
     }
-    console.log (message);
-}
-squareOrDouble(9);
+    console.log (squareOrDouble(9));
+

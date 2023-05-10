@@ -20,7 +20,7 @@ function printAge(x){
    x = 2023 - x;
 console.log (x)
 }
-//printAge(1983);
+ printAge(1983);
 
 /**
  * Task 3:
@@ -35,18 +35,18 @@ console.log (x)
 function printHello (name , language) {
 let message;
 if (language === "english") {
-    message = `Hello + "" + ${name}`;
-  } else if (language === espanish) {
-    message = `Hola + "" + ${name}`
-  } else if (language === frinch) {
-    message = `Bonjour + "" + ${name}`;
+    message = `Hello ${name}`;
+  } else if (language === "espanish") {
+    message = `Hola ${name}`
+  } else if (language === "frinch") {
+    message = `Bonjour ${name}`;
   }
  else { 
-    message = `Marhaba + "" + ${name}`;
+    message = `Marhaba ${name}`;
   }
   console.log (message);
 }
-printHello (abdulaziz , frinch);
+printHello ('abdulaziz' , 'frinch');
 /**
  * Task 4:
  * Create a function named `printMax`
@@ -62,4 +62,4 @@ function printMax (a , b){
       }
       console.log (message1);
     }
-//printMax (2 , 5);
+printMax (2 , 5);
